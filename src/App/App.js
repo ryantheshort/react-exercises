@@ -1,25 +1,25 @@
-
+import { useState } from 'react';
 import './App.css';
+import './ExerciseA';
 
 function App() {
+
+  const addBlog = (newBlog) => {
+
+  }
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <nav class="exerciseButtons">
+      <a href="#">Exercise A< src = "ExerciseA"></a>
+      <a href="#">Exercise B</a>
+      <a href="#">Exercise C</a>
+      <a href="#">Exercise D</a>
+      <a href="#">Exercise E</a>
+    </nav>
+    <ExerciseA></ExerciseA>
+  )
+
 }
 
 export default App;
