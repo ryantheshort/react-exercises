@@ -4,7 +4,7 @@ import  "./App.css";
 // import ContactList from "./ExerciseB/ContactList";
 
 function App() {
-    const {selection, setSelection} = useState("a");
+    const [selection, setSelection] = useState("a"); //setSelection being utilized with 'useState' to assign a target value to each place it's used (like a variable)
     return (
         <div className="container">
             <nav>
@@ -26,19 +26,20 @@ function App() {
                     </li>
                     <li> 
                         <button value="d" onClick={(e) => setSelection(e.target.value)}>
-                        BlogCMS
+                        Bookmark App
                         </button>
                     </li>
                     <li>
                         <button value="e" onClick={(e) => setSelection(e.target.value)}>
-                        
+                        Blog CMS
                         </button>
                     </li>
                 </ul>
             </nav>
-
-            {selection === "a" && <BlogForm />}
-            {/* {selection === "b" && <ContactList />} */}
+            
+            {selection === "a" && <BlogForm />} 
+            
+        
         </div>
 
 
