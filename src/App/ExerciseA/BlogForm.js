@@ -16,12 +16,13 @@ function BlogForm() {
         setTitle("");
         setBody("");
     };
+
   return (
     <form onSubmit={handleSubmit}>
     <h2>Add a new blog post</h2>
       <div className="mb-3" controlId="title">
         <label>Title</label>
-        <input 
+        <input
         type="text" 
         placeholder="Enter Title" 
         name="title"
@@ -32,9 +33,9 @@ function BlogForm() {
       <div className="mb-3" controlId="body">
         <label>Body</label>
         <textarea 
-
-        rows="10"
+        rows={10}
         name="body"
+        value={body}
         onChange={(event) => setBody(event.target.value)} 
         />
       </div>

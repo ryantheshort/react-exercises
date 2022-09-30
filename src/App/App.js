@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import BlogForm from "./ExerciseA/BlogForm";
 import  "./App.css";
-// import ContactList from "./ExerciseB/ContactList";
+import ContactList from './ExerciseB/ContactList/ContactList';
+import BlogDetail from './ExerciseC/BlogDetail';
+import BookmarkList from './ExerciseD/BookmarkList';
+import BlogApp from './ExerciseE/BlogApp';
+
 
 function App() {
     const [selection, setSelection] = useState("a"); //setSelection being utilized with 'useState' to assign a target value to each place it's used (like a variable)
@@ -38,7 +42,10 @@ function App() {
             </nav>
             
             {selection === "a" && <BlogForm />} 
-            
+            {selection === "b" && <ContactList />}
+            {selection === "c" && <BlogDetail />}
+            {selection === "d" && <BookmarkList />}
+
         
         </div>
 
