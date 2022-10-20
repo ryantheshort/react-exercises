@@ -35,7 +35,7 @@ function App() {
                     </li>
                     <li>
                         <button value="e" onClick={(e) => setSelection(e.target.value)}>
-                        Blog CMS
+                        Blog App
                         </button>
                     </li>
                 </ul>
@@ -45,7 +45,7 @@ function App() {
             {selection === "b" && <ContactList />}
             {selection === "c" && <BlogDetail />}
             {selection === "d" && <BookmarkList />}
-
+            {selection === "e" && <BlogApp />}
         
         </div>
 
